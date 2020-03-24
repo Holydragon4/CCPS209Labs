@@ -84,7 +84,7 @@ public class TestPolynomialMultiplyParsons
         // x(2) * x(4)
         Polynomial p13a = new Polynomial(new int[] {0,1,1});
         Polynomial p13b = new Polynomial(new int[] {0,6,11,6,1});
-        assertEquals(p13a.multiply(p13b),new Polynomial(new int[] {0,0,6,17,17,6,1}));
+        assertEquals(p13a.multiply(p13b),new Polynomial(new int[] {0,0,6,17,17,7,1}));
         
         // Case 14 - Falling Factorials https://en.wikipedia.org/wiki/Falling_and_rising_factorials
         // x(2) * x(3)
@@ -96,7 +96,7 @@ public class TestPolynomialMultiplyParsons
         // Legendre (29 distinct primes) * Legendre (16 distinct primes)
         Polynomial p15a = new Polynomial(new int[] {29,0,2});
         Polynomial p15b = new Polynomial(new int[] {17,1,1});
-        assertEquals(p15a.multiply(p15b),new Polynomial(new int[] {493,29,43,2,2}));     
+        assertEquals(p15a.multiply(p15b),new Polynomial(new int[] {493,29,63,2,2}));     
         
         // Case 16 - More Prime-Generating Polynomials https://mathworld.wolfram.com/Prime-GeneratingPolynomial.html
         // Euler (40 distinct primes) * F. Gobbo (24 distinct primes)

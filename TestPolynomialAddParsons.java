@@ -105,7 +105,7 @@ public class TestPolynomialAddParsons
         // He(10) + H(10)
         Polynomial p17a = new Polynomial(new int[] {-945,0,4725,0,-3150,0,630,0,-45,0,1});
         Polynomial p17b = new Polynomial(new int[] {-30240,0,302400,0,-403200,0,161280,0,-23040,0,1024});
-        assertEquals(p17a.add(p17b),new Polynomial(new int[] {-31185,307125,-406350,161910,-23085,1025}));
+        assertEquals(p17a.add(p17b),new Polynomial(new int[] {-31185,0,307125,0,-406350,0,161910,0,-23085,0,1025}));
         
         // Case 18 - Dickson Polynomials https://en.wikipedia.org/wiki/Dickson_polynomial
         // First Kind D5(x,alpha) + Second Kind E4(x,alpha) (ignoring alpha)
